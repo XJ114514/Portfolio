@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\File\\Github\\new-site\\Portfolio\\html\\index.html"
+            "file": "d:\\File\\Github\\new-site\\Portfolio\\index.html"
         }
     ]
 }
