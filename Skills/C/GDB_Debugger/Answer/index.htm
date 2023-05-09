@@ -1,0 +1,487 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.textlayer--absolute
+	{mso-style-name:textlayer--absolute;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Questions</span></span><span style='font-size:13.0pt;line-height:
+200%;font-family:"Times New Roman",serif;color:black'><br>
+<span class=textlayer--absolute>1. What is the command to compile the files
+with extra symbols that are useful for GDB?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>$ gcc -g
+GDBassign.c blowfish.c -o test01</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>“-g” symbol is the extra
+symbols for GDB.</span></span><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'><br>
+<span class=textlayer--absolute>2. What's the address of stuff?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>(gdb) print /a &amp;stuff</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>$2 = 0x61f2c0</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>The address is 0x61f2c0.<br>
+<span class=textlayer--absolute>3. What's the address of stuff[0]?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>(gdb) print /a &amp;(stuff[0])</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>$3 = 0x61f2c0</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>The address is 0x61f2c0.<br>
+<span class=textlayer--absolute>4. Do we expect these to be the same? Why?
+Explain what the [ ] operator does in C.</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>Yes, these two addresses
+should be the same. Because the address of the array is the address of the
+first element in array. The “[i]” operator means move the pointer to ith positions
+for example (stuff[0] = *(stuff+0) which means moving the ptr by 0 times and
+the ptr is still pointing to the first element.)</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'><br>
+<span class=textlayer--absolute>5. In Blowfish_Init( ), what is the value of
+key?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>print /s key</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>$1 = (unsigned char *) 0x405000
+&quot;LAME_KEY&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>The value of key is “LAME_KEY”<br>
+<span class=textlayer--absolute>6. What command(s) did you type in order to
+learn this?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>Create a breakpoint at the
+line running the function – <span style='background:#D9D9D9'>(gdb) b 384 </span></span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>Then continue the executing
+and make it stop at the break point -<span style='background:#D9D9D9'> (gdb) c</span></span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Then use step command to run next line and execute the function
+line by line -<span class=textlayer--absolute><span style='background:#D9D9D9'>(gdb)
+step  </span></span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>Then print out the value of
+key as a string format – <span style='background:#D9D9D9'>(gdb) print /s key</span></span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'><br>
+<span class=textlayer--absolute>7. In Blowfish_Init( ), what are the values of
+i and j after the nested for loops have finished?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>The value of i is 4 and the value of j is 256 after the loop.<br>
+<span class=textlayer--absolute>8. What command(s) did you type in order to
+learn this?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>Firstly create a breakpoint
+after the loop - <span style='background:#D9D9D9'>(gdb) b 719</span></span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>Continue the running and make
+it stop at the breakpoint –<span style='background:#D9D9D9'> (gdb) c</span></span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'>Then print out the value of i
+and j – </span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>(gdb) print i</span><span style='font-size:
+13.0pt;line-height:200%;font-family:"Times New Roman",serif;color:black'> </span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>$2 = 4</span><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'> </span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>(gdb) print j</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>$3 = 256</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'><br>
+<span class=textlayer--absolute>9. Before the Blowfish_Encrypt function is
+called, what is the value of stuff[3] (for each, print</span><br>
+<span class=textlayer--absolute>the value, and the command used to obtain the
+value):</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Firstly, create the breakpoint at the line before calling the
+function - <span style='background:#D9D9D9'>(gdb) b 385</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Run the GDB and stop at the breakpoint – <span style='background:
+#D9D9D9'>(gdb) r</span><br>
+<span class=textlayer--absolute>o in hex? <span style='background:#D9D9D9'>print
+/x stuff[3] </span></span></span><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:Wingdings;color:black'>à</span></span><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>$1 =
+0x20656874</span></span><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'><br>
+<span class=textlayer--absolute>o in binary? <span style='background:#D9D9D9'>print
+/t stuff[3]</span> </span></span><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:Wingdings;color:black'>à</span></span><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>$2 = 100000011001010110100001110100</span></span><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'><br>
+<span class=textlayer--absolute>o as a float? <span style='background:#D9D9D9'>print
+/f stuff[3]</span> </span></span><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:Wingdings;color:black'>à</span></span><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>$3 =
+1.94316151e-19</span></span><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black'><br>
+<span class=textlayer--absolute>o as 4 chars? <span style='background:#D9D9D9'> x
+/4c &amp;stuff[3]</span></span></span><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:Wingdings;color:black'>à</span></span><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>0x61f2cc:      
+116 't' 104 'h' 101 'e' 32 ' '</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'><br>
+<span class=textlayer--absolute>10. Before the Blowfish_Encrypt function is
+called, what is the value of stuff if we treat it as a</span> <span
+class=textlayer--absolute>string? (You don't have to write the whole string.
+Just describe what's there.) What was the</span> <span
+class=textlayer--absolute>command typed in order to obtain this value?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>The value of stuff printed as string is like an array storing a lot
+of huge numbers.</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Then create the breakpoint at the line before calling the function
+- <span style='background:#D9D9D9'>(gdb) b 385</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Run the GDB and stop at the breakpoint – <span style='background:
+#D9D9D9'>(gdb) r</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Then print the stuff as string –<span style='background:#D9D9D9'>
+(gdb) print /s stuff</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black;background:
+#D9D9D9'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'> </span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>11. What is the value of x the first time that the function F() in
+Blowfish.c is called?</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>(gdb) print
+x</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+class=textlayer--absolute><span style='font-size:13.0pt;line-height:200%;
+font-family:"Times New Roman",serif;color:black;background:#D9D9D9'>$8 = 1753098189</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>          The value of x for the first call is 1753098189.</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span class=textlayer--absolute><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'><br>
+<span class=textlayer--absolute>12. What is the output if we run GDB's
+backtrace (abbreviated &quot;bt&quot;) command inside the function</span> <span
+class=textlayer--absolute>F() in Blowfish.c the first time F() is called?
+Briefly explain the output of the command in your own words</span></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>(gdb) bt</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>#0  F (ctx=0x61d730, x=1753098189) at
+blowfish.c:550</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>#1  0x00000000004017dc in Blowfish_Encrypt (ctx=0x61d730,
+xl=0x61d6ec, xr=0x61d6e8) at blowfish.c:602</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>#2  0x0000000000401a30 in Blowfish_Init
+(ctx=0x61d730, key=0x405000 &quot;LAME_KEY&quot;, keyLen=8) at blowfish.c:754</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black;background:#D9D9D9'>#3  0x00000000004015f0 in main () at
+GDBassign.c:383</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Explanation: </span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>          The
+<span style='background:#D9D9D9'>#0</span> shows the first/current stack - the
+function call of F() in function Blowfish_Encrypt(). And we are running this
+stack.</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>          The
+<span style='background:#D9D9D9'>#1</span> shows the second stack - the
+function call of Blowfish_Encrypt() in Blowfish_Init(). And we are going to
+continue running the second stack after finishing the first/current stack. </span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>          The
+<span style='background:#D9D9D9'>#2</span> shows the third stack – the function
+call of Blowfish_Init() in main(). And we are going to continue running the
+third stack after finishing the second stack. </span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>          The
+<span style='background:#D9D9D9'>#3</span> shows the fourth/last stack – the
+execution of main() function in GDBassign.c. And we are going to continue
+running the fourth stack after finishing the third stack.</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>          The
+structure of the stacks should be like:</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>Main(){</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>Blowfish_Init(){</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>                    Blowfish_Encrypt(){</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>                              F(){</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>                              <span
+style='background:yellow'>We are here</span>             </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>                    }</span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'><span
+style='font-size:13.0pt;line-height:200%;font-family:"Times New Roman",serif;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:13.0pt;
+line-height:200%;font-family:"Times New Roman",serif;color:black'>}</span></p>
+
+</div>
+
+</body>
+
+</html>
