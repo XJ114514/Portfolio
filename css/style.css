@@ -1,3 +1,61 @@
+/* global style
+------------------------------------------------------------------------------------------------------- */
+body{
+    color: rgb(33, 32, 32);
+    font-family: 'Times New Roman', Times, serif;
+}
 img{
     width:300px;
+}
+a:link{
+    color:rgb(55, 204, 93);
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:rebeccapurple;
+}
+
+/* Profile style
+------------------------------------------------------------------------------------------------------- */
+header{
+    background-color: aqua;
+}
+.navigation ul li{
+    display: inline;
+    font-size: large;
+}
+.navigation a{
+    color: rgb(17, 17, 17);
+    background-color:rgb(39, 108, 34);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+
+}
+.navigation a:hover{
+    color:rgba(102, 51, 153,80%);
+}
+
+/* Project style
+------------------------------------------------------------------------------------------------------- */
+.project-style{
+    background-color: darkgray;
+}
+
+/* Work experience style
+------------------------------------------------------------------------------------------------------- */
+.work-style{
+    background-color: cadetblue;
+}
+/* Eduaction style
+------------------------------------------------------------------------------------------------------- */
+.education-style{
+    background-color: rgb(180, 72, 72);
+}
+/* Contact style
+------------------------------------------------------------------------------------------------------- */
+footer{
+    background-color:cornflowerblue;
 }

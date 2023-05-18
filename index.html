@@ -27,11 +27,19 @@
 
   <!-- Add your site or application content here -->
   <main>
-    <header>
-      "navigation bar"
+    <header class="navigation">
+      <ul class="btn">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#work-experience">Work experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
     </header>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
-    <header>
+    <header id="top">
       <img src="img/logo.svg" alt="Xu Jiang Name logo"  style="float:left">
       <h1>Xu Jiang</h1>
       <h2>Actively looking for any IT internship!</h2>
@@ -41,8 +49,8 @@
     </header>
 
     <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section>
-      <article role="navigation" aria-label="Skills">
+    <section class="project-style" id="skills">
+      <article role="skillset" aria-label="Skills">
         <h2>Skills</h2>
         <nav>
           <ul>
@@ -54,9 +62,9 @@
       </article>
     </section>
     
-    <section>
+    <section class="project-style" id="project">
       <h2>Projects</h2>
-      <p>View selected projects below. More information can be found at <a href="http://christinatruong.com">christinatruong.com</a>.</p>
+      <p>View selected projects below. More information can be found at <a href=""></a>.</p>
 
       <!-- Copy the whole <section> block to add more projects. -->
       <section>
@@ -69,7 +77,7 @@
     </section>
 
     <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section>
+    <section class="work-style" id="work-experience">
       <h2>Work Experience</h2>
       <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
 
@@ -91,7 +99,7 @@
     </section>
 
     <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-    <section>
+    <section class="education-style" id="education">
       <h2>Education</h2>
 
       <!-- Copy this whole <section> block to add more schools. -->
@@ -104,7 +112,7 @@
     </section>
 
     <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-    <footer>
+    <footer id="contact">
       <h2>Let's Keep in Touch!</h2>
 
       <!-- Social media and contact links. Add or remove any networks. -->
