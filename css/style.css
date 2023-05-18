@@ -8,27 +8,48 @@ img{
     width:300px;
 }
 a:link{
-    color:rgb(55, 204, 93);
+    color:rgb(24, 124, 49);
 }
 a:visited{
-    color:red;
+    color:rebeccapurple;
 }
 a:hover{
-    color:rebeccapurple;
+    color:red;
 }
 
 /* Profile style
 ------------------------------------------------------------------------------------------------------- */
-header{
-    background-color: aqua;
+.intro{
+    background-color: rgb(83, 138, 220);
+    padding: 1px;
+    border: 1px;
+    line-height: 20px;
+    text-align: left;
+}
+.intro h1,h2{
+    text-align: center;
+}
+.intro p{
+    margin: 8px;
+}
+
+#logo{
+    width: 150px;
+}
+.navigation{
+    padding: 1px;
+    background-image:url(../img/sea.jpg);
+    background-position:bottom;
+    border-color: gold;
+    border-radius: 8px;
 }
 .navigation ul li{
-    display: inline;
+    display: inline-block;
     font-size: large;
 }
 .navigation a{
     color: rgb(17, 17, 17);
-    background-color:rgb(39, 108, 34);
+    background-color:rgb(6, 242, 234);
     text-decoration: none;
     padding: 8px;
     border-radius: 6px;
