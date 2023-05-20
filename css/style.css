@@ -4,8 +4,20 @@ p{
     color: rgb(33, 32, 32);
     font-family: 'Montserrat', sans-serif;
 }
-h1, h2{
+h1, h2, h3{
     font-family: 'Caveat', cursive;
+}
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+h2{
+    font-size: 30px;
+    margin: 0;
+}
+h3{
+    font-size: 20px;
+    margin: 0;
 }
 img{
     width:300px;
