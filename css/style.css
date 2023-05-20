@@ -50,6 +50,8 @@ html{
     box-sizing: border-box;
 }
 .clearfix::after{
+    content:"";
+    display:table;
     clear: both;
 }
 
@@ -113,4 +115,14 @@ html{
 footer{
     background-color:cornflowerblue;
     padding: 40px 0px;
+}
+.contact-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.contact-list a{
+    padding: 20px;
+    display: inline-block;
 }
