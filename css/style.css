@@ -43,6 +43,12 @@ h1{
 .wrap{
     margin: auto 400px;
 }
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 
 /* Profile style
 ------------------------------------------------------------------------------------------------------- */
