@@ -1,8 +1,11 @@
 /* global style
 ------------------------------------------------------------------------------------------------------- */
-body{
+p{
     color: rgb(33, 32, 32);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2{
+    font-family: 'Caveat', cursive;
 }
 img{
     width:300px;
