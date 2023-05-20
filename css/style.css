@@ -49,6 +49,9 @@ html{
 *, *::before, *::after{
     box-sizing: border-box;
 }
+.clearfix::after{
+    clear: both;
+}
 
 /* Profile style
 ------------------------------------------------------------------------------------------------------- */
@@ -56,6 +59,8 @@ html{
     padding:15px;
     background-image:url(../img/sea.jpg);
     background-position:bottom;
+    position: fixed;
+    width: 100%;
 }
 .navigation ul{
     margin-left: 0px;
@@ -79,7 +84,7 @@ html{
     background-color: rgb(83, 138, 220);
     border: 8px,gold;
     text-align: left;
-    padding: 40px 0px;
+    padding: 80px 0px 40px 0px;
 }
 
 
