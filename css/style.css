@@ -40,6 +40,9 @@ h1{
 .center-align{
     text-align: center;
 }
+.left-align{
+    text-align: left;
+}
 .wrap{
     margin: auto 400px;
 }
@@ -97,9 +100,21 @@ html{
     background-color: darkgray;
     padding: 40px 0px;
 }
-
 .border-test{
     border: 2px solid black;
+}
+.flex-style{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px dotted black;
+}
+.flex-style:last-of-type{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    border-style: none;
 }
 
 
@@ -114,16 +129,26 @@ html{
 }
 .grid-style{
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 3fr 1fr;
     row-gap: 40px;
     column-gap: 10px;
+    padding-bottom: 30px;
+    border-bottom: 3px dotted black;
+}
+.grid-style:last-of-type{
+    border-style: none;
 }
 .title{
     grid-column-start: 2;
 }
 .description{
     grid-column: 3/3;
+}
+.title > h3{
+    font-size: 45px;
+}
+.title > h3 ~ p{
+    font-size: medium;
 }
 /* Eduaction style
 ------------------------------------------------------------------------------------------------------- */
