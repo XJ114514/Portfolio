@@ -112,9 +112,6 @@ html{
 .work-header{
     margin-bottom: 100px;
 }
-.border-style{
-    border: 3px dotted black ;
-}
 .grid-style{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -124,8 +121,9 @@ html{
 }
 .title{
     grid-column-start: 2;
-    padding: 3rem;
-    border-top: 3px dotted black ;
+}
+.description{
+    grid-column: 3/3;
 }
 /* Eduaction style
 ------------------------------------------------------------------------------------------------------- */
