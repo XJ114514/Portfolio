@@ -108,6 +108,7 @@ html{
 .skill-style{
     background-color: coral;
     padding: 40px 0px;
+    margin-top: -30px;
 }
 .skill-style li{
     display: inline-block;
@@ -147,7 +148,7 @@ html{
     padding: 40px 0px;
 }
 .work-header{
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 .grid-style{
     display: grid;
@@ -156,6 +157,7 @@ html{
     column-gap: 10px;
     padding-bottom: 30px;
     border-bottom: 3px dotted black;
+
 }
 .grid-style:last-of-type{
     border-style: none;
@@ -177,6 +179,7 @@ html{
 .education-style{
     background-color: rgb(180, 72, 72);
     padding: 40px 0px;
+    text-align: center;
 }
 /* Contact style
 ------------------------------------------------------------------------------------------------------- */
@@ -186,10 +189,11 @@ footer{
 }
 .contact-list{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     list-style-type: none;
-    padding: 0;
+    padding: 15px;
     justify-content: space-evenly;
-    margin-left: -50px;
 }
 .contact-list a{
     padding: 20px;
