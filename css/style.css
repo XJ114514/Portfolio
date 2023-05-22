@@ -44,9 +44,8 @@ h1{
     text-align: left;
 }
 .wrap{
-    margin: auto 400px;
+    margin: auto auto;
     max-width: 800px;
-    
 }
 html{
     box-sizing: border-box;
@@ -178,8 +177,7 @@ html{
 /* Eduaction style
 ------------------------------------------------------------------------------------------------------- */
 .education-style{
-    background: url(../img/Education.jpg) bottom/cover;
-
+    background: url(../img/Education.jpg) no-repeat right/100% 100%;
     padding: 40px 0px;
     text-align: center;
 }
