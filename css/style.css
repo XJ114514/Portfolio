@@ -66,6 +66,7 @@ html{
     padding:15px;
     background-image:url(../img/sea.jpg);
     background-position:bottom;
+    background-size: cover;
     position: fixed;
     width: 100%;
 }
@@ -177,7 +178,8 @@ html{
 /* Eduaction style
 ------------------------------------------------------------------------------------------------------- */
 .education-style{
-    background-color: rgb(180, 72, 72);
+    background: url(../img/Education.jpg) bottom/cover;
+
     padding: 40px 0px;
     text-align: center;
 }
