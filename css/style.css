@@ -45,6 +45,8 @@ h1{
 }
 .wrap{
     margin: auto 400px;
+    max-width: 800px;
+    
 }
 html{
     box-sizing: border-box;
@@ -91,14 +93,34 @@ html{
     text-align: left;
     padding: 80px 0px 40px 0px;
 }
+.header-size{
+    font-size: 35px;
+}
 
 
 
-/* Project style
+/* Project and skills style
 ------------------------------------------------------------------------------------------------------- */
 .project-style{
     background-color: darkgray;
     padding: 40px 0px;
+}
+.skill-style{
+    background-color: coral;
+    padding: 40px 0px;
+}
+.skill-style li{
+    display: inline-block;
+    align-items: center;
+    background-color:thistle;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 25px;
+    border: 4px outset black;
+}
+.skill-style li a{
+    text-decoration: none;
+    padding: 25px;
 }
 .border-test{
     border: 2px solid black;
@@ -159,7 +181,7 @@ html{
 /* Contact style
 ------------------------------------------------------------------------------------------------------- */
 footer{
-    background-color:cornflowerblue;
+    background-color:rgb(78, 117, 189);
     padding: 40px 0px;
 }
 .contact-list{
@@ -167,8 +189,16 @@ footer{
     list-style-type: none;
     padding: 0;
     justify-content: space-evenly;
+    margin-left: -50px;
 }
 .contact-list a{
     padding: 20px;
     display: inline-block;
+}
+.contact-list a:link{
+    color: rgb(15, 231, 33);
+    text-decoration: none;
+}
+.contact-list a:hover{
+    color: burlywood;
 }
