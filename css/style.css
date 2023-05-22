@@ -177,7 +177,7 @@ html{
 /* Eduaction style
 ------------------------------------------------------------------------------------------------------- */
 .education-style{
-    background: url(../img/Education.jpg) no-repeat right/100% 100%;
+    background: url(../img/Education.jpg) no-repeat top right/cover;
     padding: 40px 0px;
     text-align: center;
 }
@@ -205,4 +205,47 @@ footer{
 }
 .contact-list a:hover{
     color: burlywood;
+}
+
+/* Responsive */
+@media screen and (max-width:850px) {
+    .wrap{
+        margin: auto 10px;
+    }
+    .flex-style{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 3px dotted black;
+    }
+    .flex-style:last-of-type{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        border-style: none;
+    }
+    .grid-style{
+        display: flex;
+        flex-direction: column;
+        margin: auto 10px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 3px dotted black;
+    }
+    .grid-style:last-of-type{
+        display: flex;
+        flex-direction: column;
+        margin: auto 10px;
+        margin-top: 30px;
+        border-style: none;
+    }
+    .navigation a{
+        color: rgb(17, 17, 17);
+        text-decoration: none;
+        padding: 0px;
+        border-radius: 6px;
+        border: 2px ridge gold;
+        background-color:rgb(6, 242, 234);
+    }
 }
